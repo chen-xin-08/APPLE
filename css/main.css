@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  min-height: 100%;
+  font-size: 12px;
+}
+body:lang(zh-CN) {
+  font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+footer{
+  width: 100%;
+  height: 582px;
+  background:#f5f5f7;
+}
+
+nav {
+  width: 100%;
+  height: 44px;
+  background: rgba(0, 0, 0,.8);
+  position:fixed;
+}
+
+nav > .nav-content {
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-content > li{
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.nav-content > li:hover{
+  opacity: 1;
+}
+.nav-content > .link > a {
+  color: #f5f5f7;
+  font-size: 12px;
+  font-weight:400;
+  display:block;
+  width: 100%;
+  height:100%;
+}
+
+.nav-content >.icon{
+  width:30px;
+  height:100%;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+.nav-content >.apple-icon{
+  background-image: url('../image/apple.svg');
+}
+.nav-content >.search-icon{
+  background-position: 8px 0;
+  background-image: url('../image/search.svg');
+}
+.nav-content >.home-icon{
+  background-image: url('../image/home.svg');
+}
+.main{
+  width:100%;
+  height:calc(100% - 44px - 582px);
+  padding-top:44px;
+}
+.adds{
+  width: 100%;
+  height:44px;
+  font-size: 14px;
+  text-align:center;
+  line-height:44px;
+  background-color: #fbfbfd;
+}
+.adds a{
+  color:#06c;
+}
+.adds a:hover{
+  text-decoration:underline;
+}
+
+.product-area{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-template-rows:repeat(6,692px);
+  width:100%;
+  height:calc(100% - 44px);
+  color: #fff;
+  gap:12px;
+}
+
+.grid-2 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.iPhone-14-pro{
+  background: url("https://www.apple.com.cn/v/home/as/images/heroes/iphone-14-pro/hero_iphone14pro_preorder__cc1jjc6hq7ma_largetall.jpg") no-repeat center center;
+}
+
+.text{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding-top: 55px;
+}
+
+.text h1{
+  font-size: 50px;
+}
+.text h2{
+  font-size: 25px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.text p a{
+  font-size: 20px;
+  color: #2997ff;
+}
+.text p a:nth-of-type(2){
+  padding-right: 20px;
+}
+.text p a:nth-of-type(3){
+  padding-left: 20px;
+}
+.text p a:nth-of-type(2n-1):hover{
+  text-decoration:underline;
+}
+
+.iPhone-14{
+  background: url("https://www.apple.com.cn/home/heroes/iphone-14/images/hero_iphone14_preorder__c4g2wjzuugqe_largetall.jpg") no-repeat center center;
+}
+.watch{
+  background: url("https://www.apple.com.cn/home/heroes/watch-ultra/images/hero_apple_watch_ultra__dtz0f3e8oscy_largetall.jpg") no-repeat center center;
+}
+.AirPods-Pro{
+  background: url("https://www.apple.com.cn/v/home/as/images/promos/airpods-pro/promo_airpods_pro_avail__gaxggskofx6y_large.jpg") no-repeat center center;
+}
+.watch-8{
+  background: url("https://www.apple.com.cn/home/promos/watch-series-8/images/promo_apple_watch_series_8_order__bo2d1i4q0mqa_large.jpg") no-repeat center center;
+}
+.watch-SE{
+  background: url("https://www.apple.com.cn/v/home/as/images/promos/apple-watch-se/promo_apple_watch_se_avail__e5unstfyokae_large.jpg") no-repeat center center;
+}
+.AirPods{
+  background: url("https://www.apple.com.cn/v/home/as/images/promos/back-to-school-2022/promo_bts_last_chance__dqftd8sek46e_large.jpg") no-repeat center center;
+}
+.iPad-Air{
+  background: url("https://www.apple.com.cn/v/home/as/images/promos/ipad-air/promo_ipadair_avail__ferd4bfpcdm6_large.jpg") no-repeat center center;
+}
+.macBook-Air{
+  background: url("https://www.apple.com.cn/v/home/as/images/promos/macbook-air/promo_macbookair__fywl7i82fueu_large.png") no-repeat center center;
+}
+
+.grid-1{
+  background-size: cover;
+}
+
+.grid-1:nth-of-type(2n){
+  padding-right: 12px;
+}
+.grid-1:nth-of-type(2n-1){
+  padding-left: 12px;
+}
